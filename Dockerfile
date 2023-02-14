@@ -5,6 +5,7 @@ RUN npm i
 COPY . ./
 RUN npm run build
 
+
 FROM nginx:1.23.1-alpine AS production
 # Set working directory to nginx resources directory
 WORKDIR /usr/share/nginx/html
